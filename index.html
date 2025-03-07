@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
+        <!-- meta html -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Seryn Paige Armstrong">
         <meta name="description" content="Home page of Seryn Paige Armstrong displaying courses completed and not completed as well as where she stays.">
+        <!-- title -->
         <title>Home Page - Seryn Paige Armstrong</title>
+        <!-- Fonts links -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- styles links -->
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/larger.css">
+        <!-- scripts -->
         <script src="scripts/navigation.js" defer></script>
         <script src="scripts/date.js" defer></script>
         <script src="scripts/course.js" defer></script>
     </head>
     <body>
         <header>
+            <!-- hamburger menu and heading with profile picture -->
             <div class="header-section">
                 <span><img src="images/profile-picture.webp" alt="Profile picture"> Seryn P. Armstrong</span>
                 <button id="menu-toggle">&#9776;</button>
             </div>
+            <!-- navigation -->
             <nav id="nav-menu">
                 <a href="#" title="Home" class="active">Home</a>
                 <a href="#">Chamber</a>
@@ -30,6 +37,7 @@
             </nav>
         </header>
         <main>
+            <!-- course work section -->
             <h1>Home</h1>
             <section class="course-work">
                 <h2>Course Work</h2>
@@ -39,6 +47,7 @@
                     <li></li>
                 </ul>
             </section>
+            <!-- country section -->
             <section class="country">
                 <h2>Cape Town, South Africa</h2>
                 <figure>
@@ -55,6 +64,7 @@
                     <figcaption>Table Mountain</figcaption>
                 </figure>
             </section>
+            <!-- course section -->
             <section class="course-card">
                 <h2>Web and Computer Programming Certificate</h2>
                 <div class="filters">
@@ -64,15 +74,19 @@
                     <button onclick="filterCourses('CSE')">CSE Courses</button>
                 </div>
                 
+                <!-- course list -->
                 <div id="course-list"></div>
 
+                <!-- total course credits -->
                 <p id="total-credits"></p>
             </section>
         </main>
         <footer>
+            <!-- current year, author name and place -->
             <p>
                 <span id="currentyear"></span> &#10055; Seryn Paige Armstrong &#10055; South Africa
             </p>
+            <!-- last modofied populated by Javascript in date.js -->
             <p id="lastModified">
                 
             </p>

@@ -1,4 +1,5 @@
 @media screen and (max-width: 768px) {
+    /* header */
     header {
         flex-direction: column;
     }
@@ -14,6 +15,7 @@
         padding-bottom: 1rem;
     }
 
+        /* navigation and hamburger toggle menu */
     #nav-menu {
         display: none; /* Hide the menu on mobile */
         flex-direction: column;
@@ -73,15 +75,18 @@
         
     }
 
+    /* country card */
     .country figure {
         max-width: 100%;
         margin: 1.5rem;
     }
     
+    /* course card */
     .course-card h3 {
         font-size: 1.2rem;
     }
 
+    /* filter button in the course card */
     .filters {
         flex-direction: column;
     }

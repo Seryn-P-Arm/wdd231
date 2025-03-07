@@ -1,3 +1,4 @@
+// Course list
 document.addEventListener("DOMContentLoaded", function () {
     const courseList = document.getElementById("course-list");
 
