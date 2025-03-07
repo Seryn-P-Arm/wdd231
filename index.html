@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Seryn Paige Armstrong">
+        <meta name="description" content="Student page">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/course.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-section">
+                <span><img src="images/profile-picture.webp" alt="Profile picture"> Seryn P. Armstrong</span>
+                <button id="menu-toggle">&#9776;</button>
+            </div>
+            <nav id="nav-menu">
+                <a href="#" title="Home" class="active">Home</a>
+                <a href="#">Chamber</a>
+                <a href="#">GitHub Profile</a>
+                <a href="https://www.linkedin.com/in/seryn-paige-armstrong-369749306/" target="_blank">LinkedIn</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Home</h1>
+            <section class="course-work">
+                <h2>Course Work</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+            <section class="country">
+                <h2>Cape Town, South Africa</h2>
+                <figure>
+                    <picture>
+                        <!-- Small Screen (320px and up) -->
+                        <source media="(max-width: 767px)" srcset="images/cape-town-small.webp" type="image/webp">
+                        
+                        <!-- Large Screen (768px and up) -->
+                        <source media="(min-width: 768px)" srcset="images/cape-town-large.webp" type="image/webp">
+            
+                        <!-- Fallback Image (in case webp isn't supported) -->
+                        <img src="images/cape-town-large.webp" alt="Cape Town" />
+                    </picture>
+                    <figcaption>Table Mountain</figcaption>
+                </figure>
+            </section>
+            <section class="course-card">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="filters">
+                    <!-- HTML (for filtering buttons) -->
+                    <button onclick="filterCourses('all')">All Courses</button>
+                    <button onclick="filterCourses('WDD')">WDD Courses</button>
+                    <button onclick="filterCourses('CSE')">CSE Courses</button>
+                </div>
+                
+                <div id="course-list"></div>
+
+                <p id="total-credits"></p>
+            </section>
+        </main>
+        <footer>
+            <p>
+                <span id="currentyear"></span> <span>&#10055</span> Seryn Paige Armstrong <span>&#10055</span> South Africa
+            </p>
+            <p id="lastModified">
+                
+            </p>
+        </footer>
+    </body>
+</html>
