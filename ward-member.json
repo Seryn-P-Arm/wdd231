@@ -1,0 +1,53 @@
+{
+    "family-name" : "Armstrong",
+    "moved" : "2024-09-02",
+    "family-members" : 9,
+    "visited-bishopric" : true,
+    "members" : [
+        {
+            "name" : "Justin",
+            "gender" : "male",
+            "birthdate" : "1973-07-19"
+        },
+        {
+            "name" : "Michelle",
+            "gender" : "female",
+            "birthdate" : "1975-04-14"
+        },
+        {
+            "name" : "Tynan",
+            "gender" : "female",
+            "birthdate" : "1997-04-11"
+        },
+        {
+            "name" : "Treydon",
+            "gender" : "male",
+            "birthdate" : "1998-07-23"
+        },
+        {
+            "name" : "Joshua",
+            "gender" : "male",
+            "birthdate" : "1999-07-13"
+        },
+        {
+            "name" : "Ciara",
+            "gender" : "female",
+            "birthdate" : "2001-04-14"
+        },
+        {
+            "name" : "Joslyn",
+            "gender" : "female",
+            "birthdate" : "2001-04-17"
+        },
+        {
+            "name" : "Seryn",
+            "gender" : "female",
+            "birthdate" : "2005-09-15"
+        },
+        {
+            "name" : "Austyn",
+            "gender" : "male",
+            "birthdate" : "2008-04-05"
+        }
+    ]
+}
