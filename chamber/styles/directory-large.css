@@ -51,7 +51,8 @@
 
     /* Events card: occupies two columns in the first row */
     .events-card {
-        grid-column: 1 / 2 
+        grid-column: 1 / 2;
+        height: auto;
     }
 
     /* Other cards: each takes 1 column */

@@ -137,6 +137,10 @@ main h2 {
     font-family: "Noto Sans", sans-serif;
 }
 
+.events-card {
+    height: 200px;
+}
+
 .events-card, .current-weather-card, .weather-forecast-card {
     background-color: #cacaca;
     margin: .5rem;
