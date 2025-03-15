@@ -25,7 +25,281 @@
       "wdth" 100;
 }
 
+/* header */
 header, footer {
     background-color: var(--main-color);
     color: #fff;
+    padding: 1rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: end;
+}
+
+header img {
+    width: 90px;
+    margin-bottom: 1rem;
+}
+
+header span {
+    font-family: "Lilita One", sans-serif;
+    font-size: 18px;
+    margin-left: 4rem;
+}
+
+header p {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 13px;
+}
+
+nav {
+    background-color: var(--main-color);
+    font-family: "Noto Sans", sans-serif;
+}
+
+/* Hanburger menu styling and responsiveness */
+#menu::before {
+    content: "☰";
+}
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+/* navigation */
+ul.navigation li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: #fff;
+    text-decoration: none;
+}
+
+li.current-menu-item a {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+ul.navigation {
+    list-style-type: none;
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+
+}
+
+/* Menu navigation hover effect */
+.navigation li a:hover {
+    text-decoration: overline;
+    color: #fff;
+    background-color: #5e52ab;
+}
+
+/* Hero image */
+.hero img {
+    width: 100%;
+    height: auto;
+    padding: 0 0 1rem 0;
+    object-fit: cover;
+}
+
+main h2 {
+    padding: 0 .5rem;
+    font-family: "Lilita One", sans-serif;
+}
+
+/* Weather and event cards */
+.home-cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.events-card, .current-weather-card, .weather-forecast-card {
+    background-color: #cacaca;
+    margin: .5rem;
+}
+
+.current-weather-card div, .weather-forecast-card div {
+    height: 200px;
+}
+
+.weather-forecast-card div p {
+    padding: .6rem 0 1rem;
+}
+
+.events-card h3, .current-weather-card h3, .weather-forecast-card h3 {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: .2rem;
+    text-align: center;
+    font-family: "Lilita One", sans-serif;
+}
+
+.events-card div, .current-weather-card div, .weather-forecast-card div {
+    padding: .5rem;
+}
+
+.current-weather-card div section {
+    padding-top: .6rem;
+}
+
+.current-weather-card div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* Member cards */
+#memberCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 12px;
+}
+
+#memberCards section {
+    margin: .5rem;
+    background-color: #cacaca;
+    border-radius: 8px;
+    width: 96%;
+}
+
+#memberCards .top-section {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.57);
+    padding: 12px 0 2px;
+}
+
+#memberCards .top-section h3 {
+    font-family: "Lilita One", sans-serif;
+    font-size: 20px;
+}
+
+#memberCards .bottom-section {
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
+#memberCards .bottom-section .left-side {
+    grid-column: 1 / 2;
+}
+
+#memberCards, .bottom-section .left-side img {
+    width: 85px;
+    height: auto;
+    margin-right: 12px;
+}
+
+#memberCards .bottom-section .right-side {
+    grid-column: 2 / 3;
+    text-align: left;
+}
+
+/* List styling for member cards */
+.toggleContainer button {
+    cursor: pointer;
+    margin: 2rem 0 2rem .4rem;
+    font-family: "Noto Sans", sans-serif;
+}
+
+#memberCards.list {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 3rem;
+}
+
+#memberCards.list section {
+    display: flex;
+	margin: 0;
+	padding: .25rem .5rem;
+    font-size: 12px;
+    align-items: center;
+    max-height: 30px;
+}
+
+#memberCards.list h3 {
+    width: 180px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: none;
+    font-size: 12px
+    /* border: 2px dashed pink; */
+}
+
+#memberCards.list .tag-line {
+    width: 100px;
+    /* border: 2px dashed pink; */
+}
+
+#memberCards.list .left-side img {
+	display: none;
+    /* border: 2px dashed pink; */
+}
+
+#memberCards.list .top-section {
+    display: flex;
+    gap: 0;
+    text-align: left;
+    padding-top: .1rem;
+    border: none;
+}
+
+#memberCards.list .right-side {
+    display: grid;
+    grid-template-columns: 180px 50px 60px;
+    gap: 15px;
+    text-align: left;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    /* border: 2px dashed pink; */
+}
+
+#memberCards.list .right-side .website-url {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#memberCards.list section:nth-child(even) {
+	background-color: #bed;
+}
+
+#memberCards.list section:nth-child(odd) {
+    background-color: transparent;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    font-family: "Noto Sans", sans-serif;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+footer .social-media-section {
+    text-align: center;
 }

@@ -1,0 +1,117 @@
+{
+    "members" : [
+        {
+            "name" : "Shantan Pty (Ltd)",
+            "address" : {
+                "street" : "1510 Morgan Rd",
+                "city" : "Richards Bay",
+                "province" : "KwaZulu-Natal",
+                "zipCode" : 3904,
+                "Country" :  "South Africa"
+            },
+            "email" : "shantan@lanline.co.za",
+            "phoneNumber" : "082-833-7369",
+            "websiteURL" : "https://shantan.com/lanline-sales/R",
+            "imageurl" : "/chamber/images/shantan-logo.webp",
+            "membership" : 1,
+            "partnerhips" : 23
+        },
+        {
+            "name" : "Whitewater Rafters",
+            "address" : {
+                "street" : "789 Albert St",
+                "city" : "Alrode",
+                "province" : "Gauteng",
+                "zipCode" : 1428,
+                "Country" :  "South Africa"
+            },
+            "email" : "whitewaterrafters@gmail.com",
+            "phoneNumber" : "082-593-8083",
+            "websiteURL" : "https://whitewr.com/rafting-performance-svn/Z",
+            "imageurl" : "/chamber/images/whitewater-rafting-logo.webp",
+            "membership" : 1,
+            "partnerhips" : 33
+        },
+        {
+            "name" : "Zanders Creation Pty (Ltd)",
+            "address" : {
+                "street" : "1011 Rus St",
+                "city" : "Bellville",
+                "province" : "Western Cape",
+                "zipCode" : 7536,
+                "Country" :  "South Africa"
+            },
+            "email" : "zandersC@creation.co.za",
+            "phoneNumber" : "082-888-9140",
+            "websiteURL" : "https://zanders.com/creation-vercel/D",
+            "imageurl" : "/chamber/images/zanders-creation-logo.webp",
+            "membership" : 3,
+            "partnerhips" : 12
+        },
+        {
+        
+            "name" : "Andrea's Wholesale Pty (Ltd)",
+            "address" : {
+                "street" : "272 Diesel Street",
+                "city" : "Westonaria",
+                "province" : "Gauteng",
+                "zipCode" : 1779,
+                "Country" :  "South Africa"
+            },
+            "email" : "andreaswhole@sales.co.za",
+            "phoneNumber" : "085-821-4129",
+            "websiteURL" : "https://andreas.com/wholesale-market/j",
+            "imageurl" : "/chamber/images/andreas-wholesale-logo.webp",
+            "membership" : 2,
+            "partnerhips" : 57
+        },
+        {
+            "name" : "Wholesale Corners Pty (Ltd)",
+            "address" : {
+                "street" : "2158 Market St",
+                "city" : "Jukskeipark",
+                "province" : "Gauteng",
+                "zipCode" : 2153,
+                "Country" :  "South Africa"
+            },
+            "email" : "corners@sales.co.za",
+            "phoneNumber" : "085-292-8680",
+            "websiteURL" : "https://corners.com/sale-marketing/c",
+            "imageurl" : "/chamber/images/wholesale-corners-logo.webp",
+            "membership" : 2,
+            "partnerhips" : 45
+        },
+        {
+            "name" : "Inc Co.",
+            "address" : {
+                "street" : "2224 Bodenstein St",
+                "city" : "Boksburg",
+                "province" : "Gauteng",
+                "zipCode" : 1461,
+                "Country" :  "South Africa"
+            },
+            "email" : "incco@gmail.com",
+            "phoneNumber" : "083-424-9542",
+            "websiteURL" : "https://incco.com/tools/s",
+            "imageurl" : "/chamber/images/inc-co-logo.webp",
+            "membership" : 3,
+            "partnerhips" : 10
+        },
+        {
+            "name" : "Rand Hover Pty (Ltd)",
+            "address" : {
+                "street" : "890 Heuvel St",
+                "city" : "Bloemfontein",
+                "province" : "Free State",
+                "zipCode" : 9781,
+                "Country" :  "South Africa"
+            },
+            "email" : "randhover@gmail.com",
+            "phoneNumber" : "085-569-1839",
+            "websiteURL" : "https://randhover.com/hover-/a",
+            "imageurl" : "/chamber/images/rand-hover-logo.webp",
+            "membership" : 1,
+            "partnerhips" : 7
+        }
+    ]
+}
