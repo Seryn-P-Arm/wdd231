@@ -54,11 +54,6 @@ header p {
     font-size: 13px;
 }
 
-nav {
-    background-color: var(--main-color);
-    font-family: "Noto Sans", sans-serif;
-}
-
 /* Hanburger menu styling and responsiveness */
 #menu::before {
     content: "☰";
@@ -99,6 +94,8 @@ nav {
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
+    background-color: var(--main-color);
+    font-family: "Noto Sans", sans-serif;
 }
 
 nav ul {
@@ -125,7 +122,7 @@ nav.open {
     object-fit: cover;
 }
 
-main h2 {
+main h1 {
     padding: 0 .5rem;
     font-family: "Lilita One", sans-serif;
 }
@@ -146,7 +143,7 @@ main h2 {
     margin: .5rem;
 }
 
-.current-weather-card div, .weather-forecast-card div {
+.current-weather-card .current-weather, .weather-forecast-card div {
     height: 200px;
 }
 
@@ -154,7 +151,7 @@ main h2 {
     padding: .6rem 0 1rem;
 }
 
-.events-card h3, .current-weather-card h3, .weather-forecast-card h3 {
+.events-card h2, .current-weather-card h2, .weather-forecast-card h2 {
     background-color: var(--main-color);
     color: #fff;
     padding: .2rem;
@@ -162,15 +159,15 @@ main h2 {
     font-family: "Lilita One", sans-serif;
 }
 
-.events-card div, .current-weather-card div, .weather-forecast-card div {
+.events-card div, .current-weather, .weather-forecast-card div {
     padding: .5rem;
 }
 
-.current-weather-card div section {
+.current-weather-content {
     padding-top: .6rem;
 }
 
-.current-weather-card div {
+.current-weather-card .current-weather {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
@@ -191,34 +188,34 @@ main h2 {
     width: 96%;
 }
 
-#memberCards .top-section {
+.top-section {
     border-bottom: 1px solid rgba(0, 0, 0, 0.57);
     padding: 12px 0 2px;
 }
 
-#memberCards .top-section h3 {
+.top-section h3 {
     font-family: "Lilita One", sans-serif;
     font-size: 20px;
 }
 
-#memberCards .bottom-section {
+.bottom-section {
     padding: 12px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     
 }
 
-#memberCards .bottom-section .left-side {
+.left-side {
     grid-column: 1 / 2;
 }
 
-#memberCards, .bottom-section .left-side img {
+.left-side img {
     width: 85px;
     height: auto;
     margin-right: 12px;
 }
 
-#memberCards .bottom-section .right-side {
+.right-side {
     grid-column: 2 / 3;
     text-align: left;
 }
@@ -248,7 +245,7 @@ main h2 {
 #memberCards.list h3 {
     width: 180px;
     font-family: "Noto Sans", sans-serif;
-    font-weight: none;
+    font-weight: 0;
     font-size: 12px
     /* border: 2px dashed pink; */
 }
@@ -282,7 +279,7 @@ main h2 {
     /* border: 2px dashed pink; */
 }
 
-#memberCards.list .right-side .website-url {
+#memberCards.list .website-url {
     overflow: hidden;
     text-overflow: ellipsis;
 }

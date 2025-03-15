@@ -7,7 +7,7 @@
         <meta name="description" content="Seryn Paige Armstrong's website on The Summit Group Chamber of Commerce.">
         <meta property="og:title" content="The Summit Group Chamber of Commerce">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="/chamber/images/the-summit-group-image.webp">
+        <meta property="og:image" content="/images/the-summit-group-image.webp">
         <meta property="og:url" content="https://seryn-p-arm.github.io/wdd231/chamber/directory.html">
         <title>The Summit Group - Directory</title>
         <!-- Font links -->
@@ -17,13 +17,15 @@
         <!-- Style link -->
         <link rel="stylesheet" href="styles/directory.css">
         <link rel="stylesheet" href="styles/directory-large.css">
+        <!-- Favicon link -->
+         <link rel="icon" href="favicon.ico">
         <!-- scripts links -->
         <script src="scripts/directory.js" defer></script>
         <script src="scripts/date.js" defer></script>
     </head>
     <body>
         <header>
-            <img src="images/the-summit-group-image.webp" alt="The Summit Group Logo" width="100px" height="auto">
+            <img src="images/the-summit-group-image.webp" alt="The Summit Group Logo" width="100">
             <span>The Summit Group <br>
                 <p>Chamber of Commerce</p>
             </span>
@@ -40,15 +42,15 @@
         <main>
             <div class="hero">
                 <picture>
-                    <source srcset="images/hero-image-large.webp" media="min-width: 1000px">
-                    <img src="images/hero-image.webp" alt="Hero Image" width="320px" height="auto">
+                    <source srcset="images/hero-image-large.webp" media="(min-width: 1000px)">
+                    <img src="images/hero-image.webp" alt="Hero Image" width="320">
                 </picture>
             </div>
             <div class="main-content">
-                <h2>Home</h2>
+                <h1>Home</h1>
                 <div class="home-cards-container">
                     <section class="home-card events-card">
-                        <h3>Events</h3>
+                        <h2>Events</h2>
                         <div>
                             <p>
                             
@@ -56,10 +58,10 @@
                         </div>
                     </section>
                     <section class="home-card weather-card current-weather-card">
-                        <h3>Current Weather</h3>
-                        <div>
-                            <img src="images/weather-icon.svg" alt="Weather Icon" width="100px" height="100px">
-                            <section>
+                        <h2>Current Weather</h2>
+                        <div class="current-weather">
+                            <img src="images/weather-icon.svg" alt="Weather Icon" width="100" height="100">
+                            <div class="current=weather-content">
                                 <p><span id="temperature"><b>24°</b>C</span></p>
                                 <p><span id="condition">Sunny</span></p>
                                 <p><label>High:</label><span id=high>85°</span></p>
@@ -67,11 +69,11 @@
                                 <p><label>Humidity:</label> <span id="humidity">65%</span></p>
                                 <p><label>Sunrise:</label> <span id="sunrise">7:30am</span></p>
                                 <p><label>Sunset:</label> <span id="sunset">9:59pm</span></p>
-                            </section>
+                            </div>
                         </div>
                     </section>
                     <section class="home-card weather-card weather-forecast-card">
-                        <h3>Weather Forecast</h3>
+                        <h2>Weather Forecast</h2>
                         <div>
                             <p><label>Today: </label><span id=today><b>85°</b></span></p>
                             <p><label>Wednesday: </label> <span id="nextDay"><b>52°</b></span></p>
@@ -91,7 +93,7 @@
             </div>
         </main>
         <footer>
-            <section class="contact-section">
+            <div class="contact-section">
                 <p>
                     <b>The Summit Group Chamber of Commerce</b> <br>
                     2230 St. John Street <br>
@@ -99,13 +101,13 @@
                     serynarmstrong@gmail.com <br>
                     (067)-904-5125
                 </p>
-            </section>
-            <section class="social-media-section">
-                <a href="#"><img src="images/instagram-icon.svg" alt="Instagram Icon" width="30px" height="30px"></a>
-                <a href="#"><img src="images/facebook-icon.svg" alt="Facebook Icon" width="30px" height="30px"></a>
-                <a href=""><img src="images/linkedin-icon.svg" alt="LinkedIn Icon" width="30px" height="30px"></a>
-            </section>
-            <section class="dev-info-section">
+            </div>
+            <div class="social-media-section">
+                <a href="#"><img src="images/instagram-icon.svg" alt="Instagram Icon" width="30" height="30"></a>
+                <a href="#"><img src="images/facebook-icon.svg" alt="Facebook Icon" width="30" height="30"></a>
+                <a href=""><img src="images/linkedin-icon.svg" alt="LinkedIn Icon" width="30" height="30"></a>
+            </div>
+            <div class="dev-info-section">
                 <p>
                     WDD231 Class Project <br>
                     Seryn Paige Armstrong <br>
@@ -118,7 +120,7 @@
                 <p id="lastModified">
                     
                 </p>
-            </section>
+            </div>
         </footer>
     </body>
 </html>
