@@ -248,7 +248,7 @@ main h1 {
 #memberCards.list h3 {
     width: 180px;
     font-family: "Noto Sans", sans-serif;
-    font-weight: 0.1;
+    font-weight: 1.0;
     font-size: 12px
     /* border: 2px dashed pink; */
 }
