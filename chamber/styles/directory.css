@@ -43,13 +43,16 @@ header img {
     margin-bottom: 1rem;
 }
 
-header span {
-    font-family: "Lilita One", sans-serif;
-    font-size: 18px;
+header div {
     margin-left: 4rem;
 }
 
-header p {
+header div span {
+    font-family: "Lilita One", sans-serif;
+    font-size: 18px;
+}
+
+header div p {
     font-family: "Noto Sans", sans-serif;
     font-size: 13px;
 }
@@ -245,7 +248,7 @@ main h1 {
 #memberCards.list h3 {
     width: 180px;
     font-family: "Noto Sans", sans-serif;
-    font-weight: 0;
+    font-weight: 0.1;
     font-size: 12px
     /* border: 2px dashed pink; */
 }
