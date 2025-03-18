@@ -8,7 +8,7 @@ hamburgerElement.addEventListener('click', () => {
 });
 
 // member cards display and fetch and async/await
-const url = '/chamber/data/members.json';
+const url = './data/members.json';
 
 const cards = document.querySelector('#memberCards');
 
