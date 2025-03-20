@@ -13,7 +13,7 @@
             "phoneNumber" : "082-833-7369",
             "websiteURL" : "https://shantan.com/lanline-sales/R",
             "imageurl" : "./images/shantan-logo.webp",
-            "membership" : 1,
+            "membership" : "Member",
             "partnerhips" : 23
         },
         {
@@ -29,7 +29,7 @@
             "phoneNumber" : "082-593-8083",
             "websiteURL" : "https://whitewr.com/rafting-performance-svn/Z",
             "imageurl" : "./images/whitewater-rafting-logo.webp",
-            "membership" : 1,
+            "membership" : "Member",
             "partnerhips" : 33
         },
         {
@@ -45,7 +45,7 @@
             "phoneNumber" : "082-888-9140",
             "websiteURL" : "https://zanders.com/creation-vercel/D",
             "imageurl" : "./images/zanders-creation-logo.webp",
-            "membership" : 3,
+            "membership" : "Gold",
             "partnerhips" : 12
         },
         {
@@ -62,7 +62,7 @@
             "phoneNumber" : "085-821-4129",
             "websiteURL" : "https://andreas.com/wholesale-market/j",
             "imageurl" : "./images/andreas-wholesale-logo.webp",
-            "membership" : 2,
+            "membership" : "Silver",
             "partnerhips" : 57
         },
         {
@@ -78,7 +78,7 @@
             "phoneNumber" : "085-292-8680",
             "websiteURL" : "https://corners.com/sale-marketing/c",
             "imageurl" : "./images/wholesale-corners-logo.webp",
-            "membership" : 2,
+            "membership" : "Silver",
             "partnerhips" : 45
         },
         {
@@ -94,7 +94,7 @@
             "phoneNumber" : "083-424-9542",
             "websiteURL" : "https://incco.com/tools/s",
             "imageurl" : "./images/inc-co-logo.webp",
-            "membership" : 3,
+            "membership" : "Gold",
             "partnerhips" : 10
         },
         {
@@ -110,7 +110,7 @@
             "phoneNumber" : "085-569-1839",
             "websiteURL" : "https://randhover.com/hover-/a",
             "imageurl" : "./images/rand-hover-logo.webp",
-            "membership" : 1,
+            "membership" : "Member",
             "partnerhips" : 7
         }
     ]
