@@ -147,12 +147,6 @@ main h1 {
     border: none;
 }
 
-.call-to-action button a {
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-}
-
 .call-to-action button:active {
     background-color: var(--tertiary-color);
 }
