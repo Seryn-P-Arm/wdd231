@@ -50,12 +50,14 @@
     }
 
     /* call to action */
-    .call-to-action button {
+    .call-to-action-button {
         padding: .8rem 4rem;
         font-size: large;
+        top: 90%;
+        left: 85%;
     }
 
-    .call-to-action button:hover {
+    .call-to-action-button:hover {
         background-color: var(--tertiary-color);
         cursor: pointer;
     }
