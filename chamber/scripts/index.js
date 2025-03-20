@@ -7,6 +7,14 @@ hamburgerElement.addEventListener('click', () => {
     hamburgerElement.classList.toggle('open');
 });
 
+// Call to Action button
+function navigateToAboutUs() {
+    window.location.href = "#";
+}
+
+// Attach the function to the button
+document.getElementById("call-to-action-button").addEventListener("click", navigateToAboutUs);
+
 const spotlightContainer = document.querySelector('#company-spotlights');
 const url = './data/members.json';
 
