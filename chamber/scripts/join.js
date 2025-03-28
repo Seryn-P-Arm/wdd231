@@ -16,15 +16,16 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("Timestamp field not found.");
     }
 
-    // Membership card animations
+    // Membership card animations on page load
     const membershipCards = document.querySelectorAll(".membership-card");
+
     membershipCards.forEach((card, index) => {
         setTimeout(() => {
-            card.classList.add("fade-in");
-        }, index * 300);
+            card.classList.add("visible");
+        }, index * 500);
     });
 
-    // Modal functionality
+    // Modal functionality with animations
     const modalTriggers = document.querySelectorAll(".modal-trigger");
     const closeButtons = document.querySelectorAll(".close");
 
@@ -33,10 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
             event.preventDefault();
             const targetModalId = this.getAttribute("data-target");
             const modal = document.getElementById(targetModalId);
-            if (modal) {
-                modal.showModal();
-            } else {
-                console.error(`Modal with ID '${targetModalId}' not found.`);
+
+            if (modal && !modal.hasAttribute("open")) {  // Check if modal is not already open
+                modal.showModal();  // Show the modal
+                document.body.classList.add("modal-open");  // Prevent background scrolling
             }
         });
     });
@@ -44,17 +45,13 @@ document.addEventListener("DOMContentLoaded", function () {
     closeButtons.forEach(button => {
         button.addEventListener("click", function () {
             const modal = this.closest("dialog");
-            if (modal) {
-                modal.close();
-            }
-        });
-    });
 
-    // Close modal if user clicks outside the modal content
-    document.addEventListener("click", function (event) {
-        document.querySelectorAll("dialog[open]").forEach(modal => {
-            if (event.target === modal) {
-                modal.close();
+            if (modal) {
+                modal.style.animation = "fadeOut 0.4s ease-in forwards"; // Trigger fade-out animation
+                setTimeout(() => {
+                    modal.close();  // Close the modal after the fade-out is complete
+                    document.body.classList.remove("modal-open");  // Re-enable background scrolling
+                }, 400); // Wait for the fade-out animation to complete (400ms)
             }
         });
     });
