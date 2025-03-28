@@ -15,14 +15,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <!-- Style link -->
-        <link rel="stylesheet" href="styles/index.css">
-        <link rel="stylesheet" href="styles/index-large.css">
+        <link rel="stylesheet" href="styles/thankyou.css">
+        <link rel="stylesheet" href="styles/thankyou-large.css">
         <!-- Favicon link -->
             <link rel="icon" href="favicon.ico">
         <!-- scripts links -->
-        <script src="scripts/index.js" defer></script>
         <script src="scripts/date.js" defer></script>
-        <script src="scripts/weather.js" defer></script>
+        <script src="scripts/thankyou.js" defer></script>
     </head>
     <body>
         <header>
@@ -35,60 +34,40 @@
         </header>
         <nav id="animateNav">
             <ul class="navigation">
-                <li class="current-menu-item"><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li class="current-menu-item"><a href="join.html">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
         <main>
-            <!-- Hero image -->
-            <div class="hero">
-                <picture>
-                    <source srcset="images/index-hero-large.webp" media="(min-width: 1000px)">
-                    <img src="images/index-hero.webp" alt="Hero Image" width="320" loading="lazy">
-                </picture>
-                <button class="call-to-action-button" id="call-to-action-button">Join the Chamber</button>
-            </div>
-            <div class="main-content">
-                <!-- call to action -->
-                <h1>Home</h1>
-                <div class="home-cards-container">
-                    <!-- current events -->
-                    <section class="current-events">
-                        <h2>Current Events</h2>
-                        <div>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, quasi sequi! Pariatur iusto blanditiis doloribus eius labore, inventore voluptatem. Placeat molestiae doloremque ut voluptatum vitae. Corrupti, nesciunt quo sint esse vel voluptatibus totam quia laudantium repellendus impedit quasi, nihil officia?
-                            </p>
-                        </div>
-                    </section>
-                    <!-- weather card -->
-                    <section class="current-weather-card">
-                        <h2>Current Weather</h2>
-                        <div id="weather-card">
-                            <figure>
-                                <img id="weather-icon" src="" alt="">
-                                <figcaption></figcaption>
-                            </figure>
-                            <div>
-                                <p><b>Current Temperature: </b><span id="current-temp"></span></p>
-                                <h3>3-Day Forecast</h3>
-                                <div id="forecast">
-
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <!-- comapny spotlights -->
-                <section class="company-spotlights-container">
-                    <h2>Company Spotlights</h2>
-                    <div id="company-spotlights">
-                        
-                    </div>
+            <main>
+                <h1>Thank You for Joining The Summit Group Chamber of Commerce!</h1>
+                <p>We appreciate your application and will process your membership shortly.</p>
+                
+                <section class="submitted-info">
+                    <h2>Your Submitted Information:</h2>
+                    <p><strong>First Name:</strong> <span id="firstName"></span></p>
+                    <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+                    <p><strong>Email:</strong> <span id="email"></span></p>
+                    <p><strong>Mobile Phone:</strong> <span id="phone"></span></p>
+                    <p><strong>Business Name:</strong> <span id="organization"></span></p>
+                    <p><strong>Submission Date:</strong> <span id="timestamp"></span></p>
                 </section>
-            </div>
+                
+                <a href="index.html" class="button">Return to Home</a>
+            </main>
+            
+            <script>
+                // Extract URL parameters
+                const params = new URLSearchParams(window.location.search);
+                document.getElementById("firstName").textContent = params.get("first_name") || "N/A";
+                document.getElementById("lastName").textContent = params.get("last_name") || "N/A";
+                document.getElementById("email").textContent = params.get("email") || "N/A";
+                document.getElementById("phone").textContent = params.get("phone") || "N/A";
+                document.getElementById("organization").textContent = params.get("organization") || "N/A";
+                document.getElementById("timestamp").textContent = params.get("timestamp") || "N/A";
+            </script>
         </main>
         <footer>
             <!-- contact section -->

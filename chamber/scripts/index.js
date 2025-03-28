@@ -8,12 +8,12 @@ hamburgerElement.addEventListener('click', () => {
 });
 
 // Call to Action button
-function navigateToAboutUs() {
-    window.location.href = "#";
+function navigateToJoinPage() {
+    window.location.href = "join.html";
 }
 
 // Attach the function to the button
-document.getElementById("call-to-action-button").addEventListener("click", navigateToAboutUs);
+document.getElementById("call-to-action-button").addEventListener("click", navigateToJoinPage);
 
 const spotlightContainer = document.querySelector('#company-spotlights');
 const url = './data/members.json';

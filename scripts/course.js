@@ -1,6 +1,7 @@
 // Course list
 document.addEventListener("DOMContentLoaded", function () {
     const courseList = document.getElementById("course-list");
+    const courseDetails = document.getElementById("course-details");
 
     const courses = [
         {
@@ -65,8 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     ];
 
-    const courseContainer = document.getElementById('course-list');
-    
     // Function to render courses dynamically
     function renderCourses(filteredCourses) {
         courseList.innerHTML = ""; // Clear previous content
@@ -89,16 +88,18 @@ document.addEventListener("DOMContentLoaded", function () {
             courseCard.classList.add("course-item");
 
             // Add a class based on completion status
-            if (course.completed) {
-                courseCard.classList.add("completed");
-            } else {
-                courseCard.classList.add("not-completed");
-            }
+            courseCard.classList.add(course.completed ? "completed" : "not-completed");
 
             // Displaying more course details (subject, title, and credits)
             courseCard.innerHTML = `
-                <h3>${course.subject}</h3>
+                <h3>${course.subject}
             `;
+
+            // Add click event to open course details
+            courseCard.addEventListener('click', () => {
+                displayCourseDetails(course);
+            });
+
             courseList.appendChild(courseCard);
         });
 
@@ -106,17 +107,30 @@ document.addEventListener("DOMContentLoaded", function () {
         displayTotalCredits(filteredCourses);
     }
 
+    // Function to display course details in a modal
+    function displayCourseDetails(course) {
+        courseDetails.innerHTML = `
+            <button id="closeModal">❌</button>
+            <h2>${course.subject} ${course.number}</h2>
+            <h3>${course.title}</h3>
+            <p><strong>Credits</strong>: ${course.credits}</p>
+            <p><strong>Certificate</strong>: ${course.certificate}</p>
+            <p>${course.description}</p>
+            <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+        `;
+
+        courseDetails.showModal();
+
+        // Close modal event
+        document.getElementById("closeModal").addEventListener("click", () => {
+            courseDetails.close();
+        });
+    }
+
     // Function to filter courses
     window.filterCourses = function (category) {
-        let filteredCourses = [];
-
-        if (category === 'all') {
-            filteredCourses = courses;
-        } else {
-            filteredCourses = courses.filter(course => course.subject === category);
-        }
-
-        renderCourses(filteredCourses); // Render filtered courses
+        let filteredCourses = category === 'all' ? courses : courses.filter(course => course.subject === category);
+        renderCourses(filteredCourses);
     };
 
     // Function to calculate total credits
@@ -127,13 +141,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to display total credits
     function displayTotalCredits(courses) {
         const totalCredits = calculateTotalCredits(courses);
-        const creditsElement = document.getElementById('total-credits');
-        creditsElement.textContent = `Total Credits: ${totalCredits}`;
+        document.getElementById('total-credits').textContent = `Total Credits: ${totalCredits}`;
     }
 
     // Initial render
-    renderCourses(courses); // Render all courses initially
+    renderCourses(courses);
 
     // Update layout on window resize
-    window.addEventListener("resize", () => renderCourses(courses)); // Re-render courses on resize
+    window.addEventListener("resize", () => renderCourses(courses));
 });

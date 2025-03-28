@@ -1,0 +1,85 @@
+@media screen and (min-width: 38rem) {
+
+    /* Header adjustments */
+    header img {
+        width: 100px;
+        height: auto;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    header div span {
+        font-size: 2rem;
+    }
+
+    header div p {
+        font-size: 15px;
+    }
+
+    .hero {
+        margin: 0 6rem;
+    }
+
+    /* Navigation */
+    #menu {
+        display: none;
+    }
+
+    .navigation, .navigation .open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navigation a:hover {
+        background-color: #463a92;
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+
+    .main-content {
+        margin-left: 8rem;
+        margin-right: 8rem;
+        display: flex;
+        gap: 2rem;
+    }
+
+    /* Form adjustments */
+    .form-container {
+        flex: 1;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* Membership cards layout */
+    .membership-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .membership-card {
+        max-width: 250px;
+    }
+
+    /* Modals */
+    .modal-content {
+        width: 50%;
+        max-width: 600px;
+    }
+
+    /* Footer adjustments */
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer .social-media-section img {
+        width: 50px;
+        height: auto;
+    }
+}

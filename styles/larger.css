@@ -203,6 +203,37 @@ main .course-card {
     margin: 1rem;
 }
 
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    max-width: 500px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+dialog button:hover, .course-card {
+    cursor: pointer;
+}
+
 /* Footer */
 footer {
     padding: 4rem;
