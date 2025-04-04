@@ -19,29 +19,31 @@ function displayPlaces(places) {
 
         // build photo
         const photo = document.createElement('img');
-
         photo.src = `images/${place.photo_url}`;
         photo.alt = place.name;
         card.appendChild(photo);
 
         // build title
         const title = document.createElement('h2');
-
         title.innerText = place.name;
         card.appendChild(title);
 
         // build address
         const location = document.createElement('address');
-
         location.innerText = place.address;
         card.appendChild(location);
 
         // build description
         const desc = document.createElement('p');
-
         desc.innerText = place.description;
         card.appendChild(desc);
 
+        // Build "Learn More" button
+        const learnMoreBtn = document.createElement('button');
+        learnMoreBtn.innerText = "Learn More";
+        learnMoreBtn.classList.add("learn-more-btn");
+        card.appendChild(learnMoreBtn);
+        
         cards.appendChild(card);
     });
 }

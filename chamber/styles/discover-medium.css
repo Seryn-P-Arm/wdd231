@@ -42,7 +42,8 @@
         grid-template-areas: 
         "photo name"
         "photo description"
-        "photo location";
+        "photo location"
+        "learn_more learn_more";
     }
 
     #allplaces div img:hover {
@@ -53,6 +54,10 @@
 
     #allplaces div img {
         width: 300px;
+    }
+
+    .learn-more-btn {
+        height: 40px;
     }
 
     footer {
