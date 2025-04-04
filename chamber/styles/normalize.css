@@ -60,6 +60,7 @@ header div p {
 /* footer */
 footer {
     display: flex;
+    flex-direction: column;
     font-family: "Noto Sans", sans-serif;
     padding: 2rem;
     gap: 2rem;
