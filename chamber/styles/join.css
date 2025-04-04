@@ -1,60 +1,13 @@
-/* join.css */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --main-color: #241E4E;
-    --secondary-color: #131200;
-    --tertiary-color: #F7567C;
-}
-
-/* fonts */
-.lilita-one-regular {
-    font-family: "Lilita One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.noto-sans-body {
-    font-family: "Noto Sans", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-}
-
-/* header */
-header, footer {
-    background-color: var(--main-color);
-    color: #fff;
-    padding: 1rem;
-}
-
-header {
-    display: grid;
-    grid-template-columns: 44px auto 44px;
-    align-items: end;
-}
-
 header img {
     width: 90px;
     margin-bottom: 1rem;
 }
 
-header div {
-    margin-left: 4rem;
-}
-
 header div span {
-    font-family: "Lilita One", sans-serif;
     font-size: 18px;
 }
 
 header div p {
-    font-family: "Noto Sans", sans-serif;
     font-size: 13px;
 }
 
@@ -109,13 +62,6 @@ nav ul {
 nav.open {
     grid-template-rows: 1fr;
 
-}
-
-/* Menu navigation hover effect */
-.navigation li a:hover {
-    text-decoration: overline;
-    color: #fff;
-    background-color: #5e52ab;
 }
 
 /* Hero image */
@@ -228,14 +174,14 @@ input[type="submit"]:hover {
 /* Modal Styling */
 dialog {
     position: fixed;
-    top: 25%;
-    left: 35%;
+    top: 30%;
+    left: 5%;
     transform: translate(-50%, -50%); /* Center the modal */
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    width: 90%;
+    width: 65%;
     max-width: 500px;
     max-height: 80vh;
     overflow-y: auto;
@@ -319,18 +265,4 @@ body.modal-open dialog {
 
 .modal[open] {
     display: block; /* Show the modal when open attribute is set */
-}
-
-/* footer */
-footer {
-    display: flex;
-    flex-direction: column;
-    font-family: "Noto Sans", sans-serif;
-    padding: 2rem;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-footer .social-media-section {
-    text-align: center;
 }
