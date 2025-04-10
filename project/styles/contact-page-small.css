@@ -1,0 +1,16 @@
+@media (min-width: 320px) and (max-width: 446px) {
+
+    .contact-details {
+        margin: 0;
+        font-size: .8rem;
+    }
+
+    #contact-form, #request-form {
+        text-align: center;
+    }
+
+    .card {
+        width: 300px;
+        margin-bottom: .5rem;
+    }
+}

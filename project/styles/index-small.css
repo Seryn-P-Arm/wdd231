@@ -1,0 +1,45 @@
+@media (min-width: 320px) and (max-width: 559px) {
+    .list-points-container {
+        font-size: .9rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 530px) {
+    /* Further adjustments for smaller mobile devices */
+
+    .art-preview {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .art-preview img {
+        width: 100%;
+    }
+
+    .list-points-container {
+        font-size: 0.9rem;
+        height: 230px;
+        width: 200px;
+    }
+
+    .invite-to-about-us-page-container button {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 453px) {
+    .list-points-container {
+        position: static;
+        border: none;
+        background-color: transparent;
+        padding-top: .5rem;
+    }
+
+    .list-items {
+        padding: 0;
+    }
+
+    .art-tools-image-banner {
+        position: static;
+    }
+}

@@ -1,0 +1,136 @@
+.art-preview-container {
+    display: flex;
+    justify-content: space-around;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 2rem;
+    gap: 3rem;
+    scroll-snap-type: x mandatory;
+}
+
+.art-preview {
+    flex-shrink: 0;
+    width: 300px;
+    padding: 2rem;
+    background-color: var(--tertiary-color);
+    scroll-snap-align: center;
+}
+
+.art-preview-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.art-preview-container::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border: 10px;
+    border-radius: 5px;
+}
+
+.art-preview-container::-webkit-scrollbar-track {
+    background-color: var(--tertiary-color);
+}
+
+.welcome-container, .awareness-container, .invite-to-about-us-page-container {
+    background-color: var(--tertiary-color);
+    padding: 4rem 1rem;
+}
+
+.cta-section {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.cta-section p {
+    padding-bottom: 2rem;
+}
+
+.cta-button {
+    margin: 2rem;
+    padding: .5rem 1.5rem;
+    background-color: #8A0000;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Eagle Lake", serif;
+    border-radius: 5px;
+    border: var(--secondary-color);
+    text-decoration: none;
+  }
+  
+.cta-button:hover {
+    color: #000;
+    background-color: var(--yellow-color);
+}
+  
+
+main h2 {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 35px;
+}
+
+.awareness-container {
+    margin: 3rem;
+}
+
+h3 {
+    padding: 1rem 0;
+}
+
+.art-tools-image-banner {
+    position: relative;
+}
+
+.list-points-container {
+    position: absolute;
+    border: 2.5px dotted var(--secondary-color);
+    border-radius: 10px;
+    align-items: center;
+    width: 40%;
+    padding: 1rem;
+    z-index: 1;
+    left: 30%;
+    bottom: 25%;
+    background-color: rgba(255, 255, 255, 0.795);
+}
+
+.list-items {
+    padding: 1rem;
+}
+
+.invite-to-about-us-page-container {
+    text-align: center;
+    padding: 1rem;
+    padding-top: 4rem;
+}
+
+.invite-to-about-us-page-container button {
+    margin: 2rem;
+    padding: .5rem 1.5rem;
+    background-color: #8A0000;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Eagle Lake", serif;
+    border-radius: 5px;
+    border: var(--secondary-color);
+}
+
+.invite-to-about-us-page-container button:hover {
+    color: #000;
+    background-color: var(--yellow-color);
+}
+
+.invite-paragraph a {
+    text-decoration: underline;
+}
+
+.invite-paragraph a:hover {
+    color: #700000;
+}
+
+.invite-paragraph a:visited {
+    color: #700000;
+}
+
+.invite-paragraph a:active {
+    color: navy;
+}

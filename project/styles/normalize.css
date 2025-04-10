@@ -1,0 +1,155 @@
+:root {
+    --main-color: #FF9F80;
+    --secondary-color: #D00000;
+    --tertiary-color: #FFE1D6;
+    --yellow-color: #FFFC31;
+}
+
+/* Declare properties of margin and padding and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.fascinate-inline-regular {
+    font-family: "Fascinate Inline", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.eagle-lake-regular {
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header h1, main h2, main h3 {
+    font-family: "Fascinate Inline", serif;
+}
+
+header h1 {
+    font-size: 45px;
+    padding: 3rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 1rem;
+    font-family: "Eagle Lake", serif;
+    font-weight: bold;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000;
+    padding: .5rem 2rem;
+    border-radius: 10px;
+}
+
+header nav a:hover {
+    background-color: var(--tertiary-color);
+}
+
+.header-icon {
+    width: 60px;
+    height: auto;
+}
+
+header, footer {
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.header-icon, .footer-icon {
+    position: absolute;
+    width: 60px;
+    height: auto;
+}
+
+.header-icon.top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.header-icon.bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+#menu {
+    display: none;
+}
+
+/* #animateNav {
+    display: flex;
+    flex-direction: row;
+    max-height: none;
+    opacity: 1;
+    transform: none;
+    overflow: visible;
+} */
+
+ul.navigation {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#animateNav li {
+    margin: 0;
+}
+
+main, footer {
+    font-family: "Eagle Lake", serif;
+}
+
+.current-page {
+    text-decoration: overline var(--tertiary-color) 5px;
+}
+
+.footer-icon.bottom-right {
+    bottom: 10px;
+    right: 10px;
+}
+
+.footer-icon.top-left {
+    top: 10px;
+    left: 10px;
+}
+
+footer {
+    padding: 5rem;
+}

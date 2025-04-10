@@ -1,0 +1,29 @@
+@media (min-width: 320px) and (max-width: 530px) {
+    /* Further adjustments for smaller mobile devices */
+    .header-top {
+        gap: 0.5rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    header nav {
+        gap: 0.5rem;
+        width: 60%;
+    }
+
+    header .logo {
+        width: 80px;
+        height: auto;
+    }
+
+    main h2 {
+        font-size: 1rem;
+    }
+
+    .header-icon, .footer-icon {
+        width: 40px;
+    }
+}

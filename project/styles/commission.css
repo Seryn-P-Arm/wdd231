@@ -1,0 +1,61 @@
+main {
+    padding-top: 2rem;
+}
+
+main h2 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 35px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 4rem;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Required fields styling when invalid and valid */
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+input:required:invalid {
+    border-left: 4px solid red;
+}
+
+input:required:valid {
+    border-left: 4px solid green;
+}
+
+button {
+    margin: 2rem;
+    padding: .5rem 1.5rem;
+    background-color: #8A0000;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Eagle Lake", serif;
+    border-radius: 5px;
+    border: var(--secondary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ffcc00;
+}
+

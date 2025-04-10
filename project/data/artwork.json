@@ -1,0 +1,112 @@
+{
+    "galleryImages" : [
+        {
+            "src": "images/artwork1.webp",
+            "alt": "Artwork 1"
+        },
+        {
+            "src": "images/artwork2.webp",
+            "alt": "Artwork 2"
+        },
+        {
+            "src": "images/artwork3.webp",
+            "alt": "Artwork 3"
+        },
+        { 
+            "src": "images/artwork4.webp",
+            "alt": "Artwork 4"
+        },
+        { 
+            "src": "images/artwork5.webp",
+            "alt": "Artwork 5"
+        },
+        { 
+            "src": "images/artwork6.webp",
+            "alt": "Artwork 6"
+        },
+        { 
+            "src": "images/artwork7.webp",
+            "alt": "Artwork 7"
+        },
+        { 
+            "src": "images/artwork8.webp",
+            "alt": "Artwork 8"
+        },
+        { 
+            "src": "images/artwork9.webp",
+            "alt": "Artwork 9"
+        },
+        { 
+            "src": "images/artwork10.webp",
+            "alt": "Artwork 10" 
+        },
+        { 
+            "src": "images/artwork11.webp",
+            "alt": "Artwork 11"
+        },
+        { 
+            "src": "images/artwork12.webp",
+            "alt": "Artwork 12"
+        },
+        { 
+            "src": "images/artwork13.webp",
+            "alt": "Artwork 13"
+        },
+        { 
+            "src": "images/artwork14.webp",
+            "alt": "Artwork 14"
+        },
+        { 
+            "src": "images/artwork15.webp",
+            "alt": "Artwork 15"
+        },
+        { 
+            "src": "images/artwork16.webp",
+            "alt": "Artwork 16"
+        },
+        { 
+            "src": "images/artwork17.webp",
+            "alt": "Artwork 17"
+        },
+        { 
+            "src": "images/artwork18.webp",
+            "alt": "Artwork 18"
+        },
+        { 
+            "src": "images/artwork19.webp",
+            "alt": "Artwork 19"
+        },
+        { 
+            "src": "images/artwork20.webp",
+            "alt": "Artwork 20"
+        },
+        { 
+            "src": "images/artwork21.webp",
+            "alt": "Artwork 21"
+        },
+        { 
+            "src": "images/artwork22.webp",
+            "alt": "Artwork 22"
+        },
+        { 
+            "src": "images/artwork23.webp",
+            "alt": "Artwork 23"
+        },
+        { 
+            "src": "images/artwork24.webp",
+            "alt": "Artwork 24"
+        },
+        { 
+            "src": "images/artwork25.webp",
+            "alt": "Artwork 25"
+        },
+        { 
+            "src": "images/artwork26.webp",
+            "alt": "Artwork 26"
+        },
+        { 
+            "src": "images/artwork27.webp",
+            "alt": "Artwork 27"
+        }
+    ]
+}

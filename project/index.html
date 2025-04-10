@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Seryn Paige Armstrong">
+        <meta name="description" content="An art commission website where commissions are made and ordered, where users can look through artwork and select what they want.">
+        <meta property="og:title" content="The Art Den">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="../images/the-art-den-ad.webp">
+        <meta property="og:url" content="https://seryn-p-arm.github.io/wdd231/project/index.html">
+        <title>Art Commissions</title>
+        <!-- Font links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+        <!-- Styles links -->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/normalize-medium.css">
+        <link rel="stylesheet" href="styles/normalize-small.css">
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/index-medium.css">
+        <link rel="stylesheet" href="styles/index-small.css">
+        <!-- Scripts links -->
+        <script src="scripts/index.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/header-footer.js" defer></script>
+        <script src="scripts/animate-nav.js" defer></script>
+        <!-- Fave icon link -->
+        <link rel="icon" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <div class="header-top">
+                <img src="images/red-flower-icon.svg" alt="Red Flower" class="header-icon bottom-left" width="100" height="100"  loading="lazy">
+                <img src="images/flowers-and-bee-icon.svg" alt="Flowers and Bee" class="header-icon top-right" width="100" height="100"  loading="lazy">
+            </div>
+            <a href="#"><img class="logo" src="images/the-art-den-logo.webp" alt="The Art Den Logo" width="150" height="150"></a>                
+            <h1>THE ART DEN</h1>
+            <button type="button" id="menu"></button>           
+            <nav id="animateNav">
+                <ul class="navigation">
+                    <li class="current-page"><a href="#">Home</a></li>
+                    <li><a href="art-gallery.html">Gallery</a></li>
+                    <li><a href="commission.html">Commission</a></li>
+                    <li><a href="contact-page.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="art-preview-container">
+                <section class="art-preview">
+                    <img src="images/art-preview1.webp" alt="Art preview">
+                </section>
+                <section class="art-preview">
+                    <img src="images/art-preview2.webp" alt="Art preview">
+                </section>
+                <section class="art-preview">
+                    <img src="images/art-preview3.webp" alt="Art preview">
+                </section>
+            </div>
+            <div class="welcome-container">
+                <h2>Welcome!</h2>
+                <article class="welcome-paragraph">
+                    <p>Hey there! Welcome to The Art Den, where creativity meets customization. Whether you're looking for a unique piece to brighten up your space, a special gift, or just something cool for yourself, you've come to the right place! Take a look around, explore the artwork, and if something catches your eye (or you have a fun idea), let’s bring it to life. I’m excited to create something awesome for you!</p>
+                </article>
+                <section class="cta-section">
+                    <h2>Join The Art Den!</h2>
+                    <p>Become a creative partner and show the world your artistic side. Let’s grow together!</p>
+                    <a href="contact-page.html" class="cta-button">Become a Partner</a>
+                </section>
+            </div>
+            <div class="awareness-container">
+                <h2>Things to be of aware when ordering commisson</h2>
+                <article class="awareness-paragraph">
+                    <p>Commissions are a great way to get a unique, custom-made piece of art that fits your vision! But before we dive in, here are a few things to keep in mind: Art takes time, and every piece goes through a process—from sketching to refining to final touches. The complexity of the design, revisions, and details all play a role in determining the final cost and timeframe. To make the process smooth and enjoyable for both of us, it really helps if you provide clear references, communicate what you’re looking for, and have an idea of your budget. Don’t worry, though—I’ll guide you every step of the way!</p>
+                </article>
+                <h3>List of items to remember about the creation process and costs:</h3>
+                <div class="art-tools-image-banner">
+                    <img src="images/art-tools-banner.webp" alt="Art tools banner" loading="lazy" width="100%" height="400px">
+                    <section class="list-points-container">
+                        <ul class="list-items">
+                            <li>Provide clear references.</li>
+                            <li>Expect time for revisions.</li>
+                            <li>Prices are subject to complexity.</li>
+                            <li>Work is done in order received.</li>
+                            <li>Digital formats are standard.</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="invite-to-about-us-page-container">
+                <h2>Enjoy!</h2>
+                <article class="invite-paragraph">
+                    <p>Ready to bring your vision to life? Visit the <a href="commission.html">Commission</a> page to place an order, provide details, and start the journey of creating something unique! Or you would rather first see what I have to offer, then you can view my <a href="art-gallery.html">Art</a> gallery and decide from there. If you'd like to learn more about the process first, feel free to explore the site and get all the info you need at the <a href="contact-page.html">Contact Page</a>. Looking forward to working with you!</p> 
+                </article>
+                <button id="about-us-button">Find Out More</button>
+            </div>
+        </main>
+        <footer>
+            <img src="images/flowers-and-bee-icon.svg" alt="Flowers and Bee" class="footer-icon top-left" width="100" height="100"  loading="lazy">
+            <p>
+                <span id="currentyear"></span> &#127804; Seryn Paige Armstrong &#127804; South Africa
+            </p>
+            <p id="lastModified">
+            </p>
+            <img src="images/red-flower-icon.svg" alt="Red Flower" class="footer-icon bottom-right" width="100" height="100"  loading="lazy">
+        </footer>
+    </body>
+</html>

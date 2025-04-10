@@ -1,0 +1,82 @@
+main h2 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 35px;
+}
+
+#gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 2rem 0 4rem;
+    flex-wrap: wrap;
+}
+
+#gallery-container img {
+    width: 250px;
+    height: 358px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+#gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+.art-card img {
+    transition: transform 0.3s ease-in-out;
+}
+.art-card img:hover {
+    transform: scale(1.05);
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+.popup-img {
+    max-width: 90%;
+    max-height: 80%;
+    border: 6px solid var(--tertiary-color);
+    border-radius: 12px;
+    box-shadow: 0 0 30px var(--main-color);
+    animation: popIn 0.3s ease-out;
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 3rem;
+    color: var(--tertiary-color);
+    cursor: pointer;
+    z-index: 1001;
+    user-select: none;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Seryn Paige Armstrong">
+    <meta name="description" content="Contact me by entering name, email and message, then send the message through to my email through this page or contect me directly through one of the contact option in the Contact Details section.">
+    <meta property="og:title" content="The Art Den">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../images/the-art-den-ad.webp">
+    <meta property="og:url" content="https://seryn-p-arm.github.io/wdd231/project/index.html">
+    <title>Contact</title>
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <!-- Styles links -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/normalize-medium.css">
+    <link rel="stylesheet" href="styles/normalize-small.css">
+    <link rel="stylesheet" href="styles/contact-page.css">
+    <link rel="stylesheet" href="styles/contact-page-medium.css">
+    <link rel="stylesheet" href="styles/contact-page-small.css">
+    <!-- Scripts links -->
+    <script src="scripts/contact-page.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/animate-nav.js" defer></script>
+    <!-- Fave icon link -->
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="images/red-flower-icon.svg" alt="Red Flower" class="header-icon bottom-left" width="100" height="100"  loading="lazy">
+            <img src="images/flowers-and-bee-icon.svg" alt="Flowers and Bee" class="header-icon top-right" width="100" height="100"  loading="lazy">
+        </div>
+        <a href="index.html"><img class="logo" src="images/the-art-den-logo.webp" alt="The Art Den Logo" width="150" height="150"></a>
+        <h1>Contact</h1>
+        <button type="button" id="menu"></button>           
+        <nav id="animateNav">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="art-gallery.html">Gallery</a></li>
+                <li><a href="commission.html">Commission</a></li>
+                <li class="current-page"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="get-in-touch-container">
+            <h2>Get in Touch</h2>
+            <article class="contact-paragraph">
+                <p>Get in contact with me and ask questions about commissions, deadlines, orders, etc, and even share feedback! I look forward to working with you.</p>
+            </article>
+        </div>
+        <form id="contact-form" action="contact-success.html" method="get">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button id="send-message-button" type="submit">Send Message</button>
+        </form>
+        
+        <section class="partner-form">
+            <h2>💌 Partner with The Art Den</h2>
+            <form id="request-form" action="request-success.html">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset class="membership-selection">
+                    <legend>Membership Type:</legend>
+                  
+                    <label for="member">
+                        Member<input type="radio" id="member" name="membership" value="Member" required>
+                    </label>
+                  
+                    <label for="partner">
+                        Partner<input type="radio" id="partner" name="membership" value="Partner" required>
+                    </label>
+                  </fieldset>                  
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Tell us your reason" required></textarea>
+              <button id="submit-request-button" type="submit">Submit Request</button>
+            </form>
+          
+            <div class="info-cards">
+              <div class="card" id="community-card">
+                <h3>🎉 Community Member Perks</h3>
+                <p>Discounts, sneak peeks, and shoutouts!</p>
+                <button id="more-info-community-button" data-modal="community-modal">More Info</button>
+              </div>
+          
+              <div class="card" id="partner-card">
+                <h3>🤝 Partner / Collab Benefits</h3>
+                <p>Exclusive merch access, profits, and shared spotlight!</p>
+                <button id="more-info-partner-button" data-modal="partner-modal">More Info</button>
+              </div>
+            </div>
+          </section>
+          
+        <div class="contact-details">
+            <h3>Contact Details</h3>
+            <p>Email: <a href="mailto:serynarmstrong.Anime@gmail.com">serynarmstrong.Anime@gmail.com</a></p>
+            <p>Phone: <a href="tel:067-904-5125">067 904 5125</a></p>
+        </div>
+    </main>
+    <footer>
+        <img src="images/flowers-and-bee-icon.svg" alt="Flowers and Bee" class="footer-icon top-left" width="100" height="100"  loading="lazy">
+        <p>
+            <span id="currentyear"></span> &#127804; Seryn Paige Armstrong &#127804; South Africa
+        </p>
+        <p id="lastModified">
+        </p>
+        <img src="images/red-flower-icon.svg" alt="Red Flower" class="footer-icon bottom-right" width="100" height="100"  loading="lazy">
+        <script src="scripts/info-cards.mjs" type="module"></script>
+    </footer>
+</body>
+</html>
