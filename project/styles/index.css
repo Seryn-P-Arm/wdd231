@@ -60,7 +60,6 @@
     color: #000;
     background-color: var(--yellow-color);
 }
-  
 
 main h2 {
     text-align: center;
@@ -112,6 +111,7 @@ h3 {
     font-family: "Eagle Lake", serif;
     border-radius: 5px;
     border: var(--secondary-color);
+    cursor: pointer;
 }
 
 .invite-to-about-us-page-container button:hover {
